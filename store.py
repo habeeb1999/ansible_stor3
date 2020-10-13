@@ -31,7 +31,7 @@ def on_message(client, userdata, msg):
         print(str(receiveTime) + ": " + msg.topic + " " + message)
         #post={"topic":msg.topic,"value":message}
         post={"value":message}
-    mycol.insert_one(post)
+    mycol.insert_one(message)
     #x = mycol.insert_many(mylist)
 def delet_old_content():
     x = mycol.delete_many({})
