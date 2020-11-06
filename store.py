@@ -39,7 +39,7 @@ def delet_old_content():
 myclient = pymongo.MongoClient("mongodb://localhost:27017/")
 mydb = myclient["mydatabase"]
 mycol = mydb["customers"]
-delet_old_content()
+#delet_old_content()
 
 # Initialize the client that should connect to the Mosquitto broker
 client = mqtt.Client()
